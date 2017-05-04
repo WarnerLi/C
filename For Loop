@@ -1,0 +1,50 @@
+//
+//  main.cpp
+//  class_1
+//
+//  Created by Warner on 2017/5/2.
+//  Copyright © 2017年 Warner. All rights reserved.
+//
+
+#include <iostream>
+using namespace std;
+int main(int argc, const char * argv[])
+{
+    //倒直角三角形
+    for(int i = 8 ; i >=1;i--) //決定輸出幾層
+    {
+        for(int k = 1 ; k<=8-i;k++) //根據外層的數量輸出左邊空白
+        {
+            cout << " ";
+
+        }
+        for(int j = 1 ; j <=i ; j++) //輸出星號
+        {
+            cout << "*";
+        }
+
+    cout << endl ;
+    }
+    
+    
+    //正直角三角形
+    cout << endl ;
+    for(int i = 1 ; i <=8;i++) //決定輸出幾層
+    {
+        for(int k = 1 ; k<=8-i;k++) //根據外層的數量輸出左邊空白
+        {
+            cout << " ";
+            
+        }
+        for(int j = 1 ; j <=i ; j++) //輸出星號
+        {
+            cout << "*";
+        }
+        
+        cout << endl ;
+    }
+
+    
+    
+    return 0;
+}
