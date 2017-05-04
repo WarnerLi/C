@@ -11,9 +11,9 @@ using namespace std;
 int main(int argc, const char * argv[])
 {
     //倒直角三角形
-    for(int i = 8 ; i >=1;i--) //決定輸出幾層
+    for(int i = 5 ; i >=1;i--) //決定輸出幾層
     {
-        for(int k = 1 ; k<=8-i;k++) //根據外層的數量輸出左邊空白
+        for(int k = 1 ; k<=5-i;k++) //根據外層的數量輸出左邊空白
         {
             cout << " ";
 
@@ -29,9 +29,9 @@ int main(int argc, const char * argv[])
     
     //正直角三角形
     cout << endl ;
-    for(int i = 1 ; i <=8;i++) //決定輸出幾層
+    for(int i = 1 ; i <=5;i++) //決定輸出幾層
     {
-        for(int k = 1 ; k<=8-i;k++) //根據外層的數量輸出左邊空白
+        for(int k = 1 ; k<=5-i;k++) //根據外層的數量輸出左邊空白
         {
             cout << " ";
             
@@ -43,7 +43,36 @@ int main(int argc, const char * argv[])
         
         cout << endl ;
     }
+    
+    cout << endl ;
 
+    //菱形
+    for(int i = 1 ; i<=5 ; i ++)
+    {
+        for(int k = 1 ; k <= 5-i ; k++)
+        {
+            cout << " " ;
+        }
+        for(int j = 1 ; j<=2*i-1 ; j ++)
+        {
+            cout << "*";
+        }
+        cout << endl ;
+    }
+    for(int i = 4 ; i>=1 ; i --)
+    {
+        for(int k = 5-i ; k >= 1 ; k--)
+        {
+            cout << " " ;
+        }
+        for(int j = 1 ; j<=(2*(i-1)+1) ; j ++)
+        {
+            cout << "*";
+        }
+        cout << endl ;
+    }
+
+    
     
     
     return 0;
